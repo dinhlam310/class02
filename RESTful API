@@ -1,1 +1,30 @@
+1. RESTful API là gì?
+RESTful API được xem là tiêu chuẩn để thiết kế API cho Web services nói riêng và ứng dụng web trên máy tính, smartphone và nhiều thiết bị nói chung, giúp kết nối và quản lý các nguồn tài nguyên trên website. Tiêu chuẩn này chú trọng vào các tài nguyên hệ thống như hình ảnh, văn bản, âm thanh, video và dữ liệu người dùng,... dưới dạng được định dạng và truyền tải qua HTTP.
+2. Các thành phần của RESTful API 
++) Endpoint : là đường dẫn mà client sẽ gửi yêu cầu đến
++) Method : là các phương thức được quy định đối với các loại yêu cầu khác nhau
+Cách thức hoạt động cơ bản của RESTful API dựa trên giao thức HTTP. Mỗi hoạt động khác nhau cơ bản sẽ có những phương thức HTTP riêng.
+- GET (SELECT): Trả về một Resource hoặc một danh sách Resource.
+- POST (CREATE): Tạo mới một Resource.
+- PUT (UPDATE): Cập nhật thông tin cho Resource.
+- DELETE (DELETE): Xóa một Resource.
+
++) Headers : là tiêu đề của yêu cầu cung cấp thông tin cho client và server
+
++) Body : Body chứa thông tin mà client gửi lên cho server
++) Status code : là một mã được server trả về để thông báo kết quả xử lí yêu cầu
+Khi chúng ta request một API nào đó thường thì sẽ có vài status code để nhận biết sau:
+•	200 OK – Trả về thành công cho những phương thức GET, PUT, PATCH hoặc DELETE.
+•	201 Created – Trả về khi một Resouce vừa được tạo thành công.
+•	204 No Content – Trả về khi Resource xoá thành công.
+•	400 Bad Request – Request không hợp lệ
+•	401 Unauthorized – Request cần có auth.
+•	403 Forbidden – bị từ chối không cho phép.
+•	404 Not Found – Không tìm thấy resource từ URI
+Một số ưu điểm chính khi sử dụng RESTFUL API là:
+•	Giúp cho ứng dụng rõ ràng hơn
+•	REST URL đại diện cho resource chứ không phải hành động
+•	Dữ liệu được trả về với nhiều định dạng khác nhau như: xml, html, json….
+•	Code đơn giản và ngắn gọn
+•	REST chú trọng vào tài nguyên của hệ thống
 
